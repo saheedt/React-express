@@ -1,10 +1,12 @@
 const path = require('path');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
-//const entryPoint = path.resolve("App.js");
-//const outputDir = path.resolve(__dirname);
+const extractPlugin = new ExtractTextPlugin({
+	filename: 'main.css'
+});
 
 const config = {
-	entry: "./App.js",
+	entry: ["./App.js"],
 	output: {
 		path: path.resolve(__dirname),
 		filename: "bundle.js"
@@ -18,10 +20,18 @@ const config = {
 				query: {
 					presets: ["react", "es2015", "stage-2"]
 				}
+			},
+			{
+				test: /\.css$/,
+				loader: extractPlugin.extract({ fallback: 'style-loader', use: 'css-loader' })
+
 			}
 
 		]
-	}
-}
+	},
+	plugins: [
+		extractPlugin
+	]
+};
 
 module.exports = config;
