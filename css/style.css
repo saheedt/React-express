@@ -1,0 +1,55 @@
+html,body{
+	width: 100%;
+	height: 100%;
+}
+
+h2{
+	margin-left: 40%;
+	margin-top: 40%;
+	color: 'lightgrey';
+	font-family: 'Times Times New Roman';
+	font-style: italic;
+	font-weight: lighter;
+}
+li{position:relative;overflow: hidden;}
+img{background-size: cover;}
+
+@media screen and (max-width: 320px){
+	li{
+		list-style: none;
+		float: left;
+		width: 150px;
+		height: 150px;
+	}
+}
+@media screen and (max-width: 320px){
+	li{
+		list-style: none;
+		float: left;
+		width: 150px;
+		height: 150px;
+	}
+}
+@media screen and (min-width: 321px) and (max-width: 414px){
+	li{
+		list-style: none;
+		float: left;
+		width: 200px;
+		height: 200px;	}
+}
+
+@media screen and (min-width: 414px) and (max-width: 800px){
+	li{
+		list-style: none;
+		float: left;
+		width: 300px;
+		height: 300px;	}
+}
+@media screen and (min-width: 801px){
+	li{
+		list-style: none;
+		float: left;
+		width: 350px;
+		height: 350px;
+	}
+}
