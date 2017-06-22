@@ -10,6 +10,10 @@ This repository contains a demo to a ReactJS application served with ExpressJS, 
 * If ```bundle.js``` and ```main.css``` files are missing, you need to run the command ```npm run build``` , which runs a webpack script to build a single javascript file and a css file which we link up in ```index.html``` file.
 
 
+### **Test**
+-------------
+* To test this app, you need to run ```npm test ``` , afer installing all it's dependencies as described above.
+
 ### **Authors**
 
 **Ajibulu  Saheed**
